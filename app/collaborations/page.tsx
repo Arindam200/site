@@ -211,7 +211,7 @@ export default function CollaborationsPage() {
         </p>
         <ul>
           <li>
-            11K+ followers on{" "}
+            ~350K+ impressions/month on{" "}
             <a
               href={withUtmSource("https://dub.sh/arindam-linkedin")}
               target="_blank"
@@ -222,7 +222,7 @@ export default function CollaborationsPage() {
             </a>
           </li>
           <li>
-            150K+ views on{" "}
+            180K+ views on{" "}
             <a
               href={withUtmSource("https://ggl.link/arindam-youtube")}
               target="_blank"
@@ -245,6 +245,13 @@ export default function CollaborationsPage() {
             </a>
           </li>
         </ul>
+        <p>
+          For a closer look at recent performance across platforms, see the{" "}
+          <a href="/stats" className="underline">
+            stats page
+          </a>
+          .
+        </p>
 
         <hr className="my-8 border-neutral-100 dark:border-neutral-800" />
 
