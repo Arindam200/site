@@ -16,6 +16,11 @@ export const metadata: Metadata = {
 
 const customers = [
   {
+    name: "Nebius",
+    logo: "/customer-logos/nebius.jpg",
+    href: "https://nebius.com/",
+  },
+  {
     name: "HeyGen",
     logo: "/customer-logos/heygen.png",
     href: "https://www.heygen.com/",
@@ -147,8 +152,13 @@ const customers = [
   },
   {
     name: "NeatPrompts",
-    logo: "/customer-logos/neatprompts.svg",
+    logo: "/customer-logos/neatprompts.png",
     href: "https://www.neatprompts.com/",
+  },
+  {
+    name: "Pexo AI",
+    logo: "/customer-logos/pexo-ai.png",
+    href: "https://pexo.ai/",
   },
 ];
 

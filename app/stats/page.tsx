@@ -35,8 +35,8 @@ const platforms: Platform[] = [
     href: withUtmSource("https://dub.sh/arindam-linkedin"),
     period: "Last 30 days",
     stats: [
-      { label: "Impressions", value: "347,599", delta: "+814%" },
-      { label: "Members reached", value: "170,153" },
+      { label: "Impressions", value: "412,992", delta: "+972%" },
+      { label: "Members reached", value: "271,856" },
       { label: "Social engagements", value: "6,018" },
       { label: "Link engagements", value: "3,891" },
     ],
@@ -189,7 +189,7 @@ export default function StatsPage() {
           .
         </p>
         <p className="text-sm text-neutral-500 dark:text-neutral-400">
-          Last updated: September 13, 2026
+          Last updated: September 15, 2026
         </p>
       </div>
     </section>
