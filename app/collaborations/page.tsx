@@ -16,11 +16,6 @@ export const metadata: Metadata = {
 
 const customers = [
   {
-    name: "Ant Ling",
-    logo: "/customer-logos/ant-ling.svg",
-    href: "https://www.ant-ling.com/en/",
-  },
-  {
     name: "Nebius",
     logo: "/customer-logos/nebius.jpg",
     href: "https://nebius.com/",
@@ -164,6 +159,11 @@ const customers = [
     name: "Pexo AI",
     logo: "/customer-logos/pexo-ai.png",
     href: "https://pexo.ai/",
+  },
+  {
+    name: "Ant Ling",
+    logo: "/customer-logos/ant-ling.webp",
+    href: "https://www.ant-ling.com/en/",
   },
 ];
 
