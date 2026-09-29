@@ -1,0 +1,29 @@
+/* Additions for the open-source talk. Same tokens as base.css. */
+
+/* small in-flow call to action, used between sections */
+.cta { display: inline-flex; align-items: center; gap: 18px; align-self: flex-start; border: 2px solid var(--ink); background: var(--white); padding: 12px 22px; font-size: 28px; }
+.cta .mono { font-size: 26px; background: var(--accent); color: var(--ink); padding: 2px 12px; }
+.dark .cta, .plum .cta { background: transparent; border-color: var(--paper); }
+
+/* receipts: big numbers row */
+.receipts { display: grid; grid-template-columns: repeat(4, 1fr); border: 3px solid var(--ink); background: var(--white); }
+.receipts .r { padding: 32px 30px; border-right: 3px solid var(--ink); display: flex; flex-direction: column; gap: 10px; }
+.receipts .r:last-child { border-right: 0; background: var(--accent); }
+.receipts .k { font-family: var(--mono); font-size: 24px; color: var(--plum-2); text-transform: uppercase; letter-spacing: .1em; }
+.receipts .r:last-child .k { color: var(--ink); }
+.receipts .v { font-size: 88px; font-weight: 700; line-height: 1; letter-spacing: -.03em; }
+.receipts p { font-size: 30px; color: var(--muted); }
+.receipts .r:last-child p { color: var(--ink); }
+
+/* origin story: steps joined by arrows */
+.steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
+.steps .s { border: 2px solid var(--ink); background: var(--white); padding: 28px 28px 32px; margin-left: -2px; display: flex; flex-direction: column; gap: 12px; position: relative; }
+.steps .s:first-child { margin-left: 0; }
+.steps .s.accent { background: var(--accent); }
+.steps .s .num { font-family: var(--mono); font-size: 26px; color: var(--plum-2); }
+.steps .s.accent .num { color: var(--ink); }
+.steps .s p { font-size: 32px; }
+
+/* layout for the repo slide: text left, QR right */
+.repo-row { display: flex; gap: 72px; align-items: center; }
+.qr-cap { display: flex; flex-direction: column; gap: 14px; align-items: center; }

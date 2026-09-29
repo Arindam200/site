@@ -40,6 +40,10 @@ const nextConfig = {
         source: "/slides/ship-it-together/handout",
         destination: "/slides/ship-it-together/handout.html",
       },
+      {
+        source: "/slides/open-source-helped-me",
+        destination: "/slides/open-source-helped-me/index.html",
+      },
     ];
   },
 };
