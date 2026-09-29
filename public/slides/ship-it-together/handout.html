@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hackathon Ship Checklist</title>
+<link rel="stylesheet" href="/slides/ship-it-together/css/base.css">
+<link rel="stylesheet" href="/slides/ship-it-together/css/handout.css">
+</head>
+<body>
+<button class="printbtn" onclick="window.print()">Print / Save as PDF</button>
+<div class="page">
+  <header>
+    <div>
+      <div class="kicker">Hackathon playbook · 24 hours</div>
+      <h1>Ship it. <span>Together.</span></h1>
+    </div>
+    <div class="qr"><img src="/slides/ship-it-together/assets/qr-openlore.svg" alt="QR code to openlore.sh"></div>
+  </header>
+
+  <div class="grid">
+    <div class="box">
+      <h2>Hour 0–2 · Plan</h2>
+      <ul>
+        <li>Read the judging rubric</li>
+        <li>Write "done" in one sentence</li>
+        <li>Write the 90-second demo script</li>
+        <li>Pick the one demo path</li>
+        <li>Assign roles and owners</li>
+        <li>Agree on repo, branches, deploy target</li>
+        <li>Set up shared context (see below)</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h2>Scope · MoSCoW</h2>
+      <ul>
+        <li><b>Must</b> The demo path only</li>
+        <li><b>Should</b> Only after Must is deployed</li>
+        <li><b>Could</b> "Future work" slide</li>
+      </ul>
+      <h2 style="margin-top:4mm">Roles</h2>
+      <ul>
+        <li><b>FE</b> Owns demo UI</li>
+        <li><b>BE</b> Owns data and APIs</li>
+        <li><b>Glue</b> Integration and deploy</li>
+        <li><b>Pitch</b> Owns the story</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="box accent">
+    <h2>Timeline</h2>
+    <ul>
+      <li><b>H4</b> Ugly skeleton live on a public URL</li>
+      <li><b>H12</b> Demo path works end to end</li>
+      <li><b>H20</b> Code freeze. Bug fixes only. Rehearse out loud with a timer.</li>
+      <li><b>H22</b> Record a backup demo video. Then sleep.</li>
+    </ul>
+  </div>
+
+  <div class="grid">
+    <div class="box script">
+      <h2>90-second demo script</h2>
+      <p><b>1 PROBLEM</b> One relatable sentence.</p><div class="lines"></div>
+      <p><b>2 TRIGGER</b> The moment the user acts.</p><div class="lines"></div>
+      <p><b>3 AHA</b> The thing that works live.</p><div class="lines"></div>
+      <p><b>4 CLOSE</b> Why it matters, what's next.</p><div class="lines"></div>
+    </div>
+    <div class="box">
+      <h2>Shared context for agents</h2>
+      <p style="margin-bottom:2mm">Start with one <b>AGENTS.md</b> under 200 lines. When files drift, share one live source:</p>
+<pre><span class="c"># serve the team's docs folder</span>
+<span class="p">$</span> go install github.com/aakarim/\
+  go-openlore/cmd/openlore@latest
+<span class="p">$</span> openlore ./docs
+<span class="c"># SSH :2222 · web + MCP :8080</span>
+<span class="p">$</span> ssh -p 2222 localhost \
+  "grep -r 'auth' /"
+<span class="p">$</span> claude mcp add --transport http \
+  openlore http://localhost:8080/mcp</pre>
+    </div>
+  </div>
+
+  <footer>
+    <span>openlore.sh · github.com/aakarim/OpenLore</span>
+    <span>Small branches. Early deploys. One source of truth.</span>
+  </footer>
+</div>
+</body>
+</html>

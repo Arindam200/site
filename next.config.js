@@ -29,6 +29,19 @@ const nextConfig = {
   turbopack: {
     root: __dirname,
   },
+  // Static HTML decks live in public/slides/<slug>/ and get clean URLs here.
+  async rewrites() {
+    return [
+      {
+        source: "/slides/ship-it-together",
+        destination: "/slides/ship-it-together/index.html",
+      },
+      {
+        source: "/slides/ship-it-together/handout",
+        destination: "/slides/ship-it-together/handout.html",
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;

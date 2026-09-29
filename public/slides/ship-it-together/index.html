@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ship It. Together.</title>
+<meta name="description" content="How to ship at a hackathon and coordinate your team and your AI agents.">
+<link rel="stylesheet" href="/slides/ship-it-together/css/base.css">
+<link rel="stylesheet" href="/slides/ship-it-together/css/deck.css">
+</head>
+<body>
+<div class="viewport">
+<main class="stage">
+
+<!-- 1 -->
+<section class="slide dark" data-title="Ship it. Together.">
+  <div class="kicker">Hackathon talk · 2026</div>
+  <h1>Ship it.<br><span class="hl">Together.</span></h1>
+  <p class="lede muted">People, agents, and one shared brain.</p>
+  <div class="pixel-rule" style="width:360px; background: repeating-linear-gradient(90deg, var(--accent) 0 5px, transparent 5px 9px)"></div>
+  <p class="small muted">Arindam Majumder</p>
+</section>
+
+<!-- 2: about -->
+<section class="slide" data-title="Hi, I'm Arindam">
+  <div class="row" style="gap:96px; align-items:center">
+    <div class="photo"><img src="/slides/ship-it-together/assets/arindam.jpg" alt="Arindam Majumder speaking at a community event"></div>
+    <div class="col" style="display:flex; flex-direction:column; gap:32px">
+      <div class="kicker">Hi, I'm</div>
+      <h2 style="font-size:120px">Arindam Majumder</h2>
+      <p class="lede">A developer with a <span class="hl">lot of agents</span>.</p>
+      <ul class="plain">
+        <li>Co-founder of <b>Studio1</b></li>
+        <li>DevRel consultant at <b>Nebius</b></li>
+        <li>Open source contributor, always shipping</li>
+        <li>Been on <b>both sides of the judging table</b></li>
+      </ul>
+      <p class="muted small">What I love most: the shipping energy.</p>
+      </div>
+  </div>
+</section>
+
+<!-- 3: connect -->
+<section class="slide plum qr-slide" data-title="Where to find me">
+  <div class="row" style="gap:64px; align-items:center">
+    <div class="col" style="display:flex; flex-direction:column; gap:32px">
+      <div class="kicker">Say hi</div>
+      <h2 style="font-size:84px">Come find me.</h2>
+      <ul class="plain">
+        <li>Videos on <b>YouTube</b></li>
+        <li>Thoughts on <b>Twitter</b> and <b>LinkedIn</b></li>
+        <li>Questions welcome after</li>
+      </ul>
+      <p class="small muted">All my links:<br><span class="mono">linktr.ee/arindam_1729</span></p>
+    </div>
+    <div class="qr xxl"><img src="/slides/ship-it-together/assets/qr-linktree.svg" alt="QR code linking to linktr.ee/arindam_1729"></div>
+  </div>
+</section>
+
+<!-- 3 -->
+<section class="slide" data-title="Why teams fail">
+  <div class="kicker">Act 1 · Ship well</div>
+  <h2>Why teams don't ship.</h2>
+  <div class="grid4">
+    <div class="card"><div class="num">01</div><h3>Overscoping</h3><p>Months of product in a weekend. The #1 killer.</p></div>
+    <div class="card"><div class="num">02</div><h3>No plan</h3><p>Coding at minute one, arguing at hour ten.</p></div>
+    <div class="card"><div class="num">03</div><h3>Broken demo</h3><p>A last-minute "improvement" takes it all down.</p></div>
+    <div class="card"><div class="num">04</div><h3>Wrong team</h3><p>Picked for friendship, not for the skills you need.</p></div>
+  </div>
+  <div class="src">Sources: MIT Sloan Management Review · hackathon post-mortems on Medium and DEV</div>
+</section>
+
+<!-- story -->
+<section class="slide" data-title="My first hackathon">
+  <div class="kicker">A story · my first hackathon</div>
+  <h2>Both halves worked.</h2>
+  <div class="gap-diagram">
+    <div class="half"><span class="mono">Me</span><h3>Frontend</h3><p>Built. Working.</p></div>
+    <div class="gap"><i></i><b>?</b><i></i></div>
+    <div class="half"><span class="mono">My friend</span><h3>Backend</h3><p>Built. Working.</p></div>
+  </div>
+  <p class="lede">We never connected them. <span class="hl">We didn't ship.</span></p>
+  <p class="muted small">I've watched other teams make the same mistake. Our tools don't talk to each other, and neither did our context.</p>
+</section>
+
+<!-- 5 -->
+<section class="slide" data-title="Hour 0–2: plan">
+  <div class="kicker">Hour 0–2</div>
+  <h2>Plan for two hours. It saves ten.</h2>
+  <div class="row">
+    <ul class="check col">
+      <li>Read the judging rubric first</li>
+      <li>Write what "done" looks like in one sentence</li>
+      <li>Write the 90-second demo script, before any code</li>
+    </ul>
+    <ul class="check col">
+      <li>Pick the one path the demo will walk</li>
+      <li>Assign roles: frontend, backend, glue, presenter</li>
+      <li>Agree on repo, branches, deploy target and where shared context lives</li>
+    </ul>
+  </div>
+  <p class="muted small">Judging criteria decide more than raw technical merit. And balanced teams beat four backend engineers who can't explain what they built.</p>
+</section>
+
+<!-- 6 -->
+<section class="slide" data-title="Scope with MoSCoW">
+  <div class="kicker">Scope</div>
+  <h2>Cut scope like you mean it.</h2>
+  <div class="grid3">
+    <div class="card accent"><h3>Must</h3><p>The demo path only. Log in, do the one thing, see the result.</p></div>
+    <div class="card"><h3>Should</h3><p>Only if the Must is deployed and rehearsed.</p></div>
+    <div class="card"><h3>Could</h3><p>Goes on the "future work" slide. That's not failure, that's a roadmap.</p></div>
+  </div>
+  <p class="muted">Example: a study-buddy app. <b>Must</b>: upload notes, get a quiz. <b>Could</b>: accounts, sharing, streaks.</p>
+</section>
+
+<!-- 9 -->
+<section class="slide" data-title="Coding workflow">
+  <div class="kicker">Workflow</div>
+  <h2>Merge often. Freeze early.</h2>
+  <div class="row">
+    <div class="col term"><div class="term-bar"><i></i><i></i><i></i></div><span class="c"># the whole git policy</span>
+<span class="p">$</span> git switch -c feat/quiz-endpoint
+<span class="p">$</span> git commit -am "quiz endpoint"
+<span class="p">$</span> git pull --rebase origin main
+<span class="p">$</span> git push   <span class="c"># PR, merge within 1h</span>
+
+<span class="c"># T-2h: code freeze.</span>
+<span class="c"># Only bug fixes on main.</span></div>
+    <ul class="plain col">
+      <li>Ugly skeleton live by hour 4</li>
+      <li>Small branches, merged within the hour</li>
+      <li><b>T-2h freeze.</b> No last-minute heroics.</li>
+      <li>One person owns the deploy button</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 10 -->
+<section class="slide" data-title="Demo craft">
+  <div class="kicker">The demo</div>
+  <h2>90 seconds. Four beats.</h2>
+  <div class="grid4">
+    <div class="card"><div class="num">1</div><h3>Problem</h3><p>One relatable sentence</p></div>
+    <div class="card"><div class="num">2</div><h3>Trigger</h3><p>The moment the user acts</p></div>
+    <div class="card accent"><div class="num">3</div><h3>Aha</h3><p>The thing that works live</p></div>
+    <div class="card"><div class="num">4</div><h3>Close</h3><p>Why it matters, what's next</p></div>
+  </div>
+  <p class="muted">Mock what's risky. Remove every place the demo can stall. Rehearse out loud, with a timer.</p>
+</section>
+
+<!-- video plug -->
+<section class="slide video-slide" data-title="My Gemma hackathon video">
+  <div class="kicker">Small plug · watch later</div>
+  <h2 style="font-size:64px; text-align:center; max-width:none">How I won the Gemma Hackathon.</h2>
+  <div class="video" id="yt-video" data-yt-id="lk6ttt6Nu_M">
+    <div class="video-fallback">Video embed<br><span class="mono small">set data-yt-id on #yt-video</span></div>
+  </div>
+  <div class="video-foot">
+    <div class="qr sm"><img src="/slides/ship-it-together/assets/qr-video.svg" alt="QR code to the video"></div>
+    <p class="small">The idea, my thought process, and the whole workflow.<br><span class="mono" id="yt-link">youtu.be/lk6ttt6Nu_M</span></p>
+  </div>
+</section>
+
+<!-- 12 -->
+<section class="slide" data-title="Four teammates, four truths">
+  <div class="kicker">The problem</div>
+  <h2>Four teammates. Four truths.</h2>
+  <div class="truths">
+    <div class="truth"><div class="who">Asha · Cursor</div><pre>API base:
+<b>/api/v1</b>
+DB: Postgres</pre></div>
+    <div class="truth"><div class="who">Ben · Claude Code</div><pre>API base:
+<b>/v2</b>
+DB: SQLite</pre></div>
+    <div class="truth"><div class="who">Chen · Copilot</div><pre>Auth: JWT
+(spec changed
+3h ago)</pre></div>
+    <div class="truth"><div class="who">Dee · ChatGPT</div><pre>Pasted README
+from
+hour 1</pre></div>
+  </div>
+  <p class="muted">Each agent is confident and each is working from a different copy. Ask who has pasted the same README into three tools.</p>
+</section>
+
+<!-- 14 -->
+<section class="slide" data-title="Where it breaks">
+  <div class="kicker">The ceiling</div>
+  <h2>Start with AGENTS.md. Then it drifts.</h2>
+  <div class="row">
+    <div class="col">
+      <div class="big-num" style="color:var(--plum-2)">178</div>
+      <p class="muted">lines differed between AGENTS.md and CLAUDE.md in one real repo</p>
+    </div>
+    <ul class="plain col">
+      <li>AGENTS.md: one file, 20+ tools read it</li>
+      <li>Then CLAUDE.md, .cursorrules, Copilot diverge</li>
+      <li>Stale docs send agents the wrong way</li>
+      <li>Nobody owns them or tracks changes</li>
+    </ul>
+  </div>
+  <div class="src">Sources: agents.md · Focused Labs on DEV · "AGENTS.md is not enough" on DEV</div>
+</section>
+
+<!-- 15 -->
+<section class="slide dark" data-title="Meet OpenLore">
+  <div class="kicker">One shared source</div>
+  <h1 style="font-size:130px">Meet <span class="hl">OpenLore.</span></h1>
+  <p class="lede">A knowledge base for AI agents. One place for docs, notes and runbooks that agents and people all read, live.</p>
+  <div class="hub">
+    <div class="side"><div class="node">Cursor</div><div class="node">Claude Code</div><div class="node">Copilot</div></div>
+    <div class="core">OpenLore<small>SSH · MCP · HTTP</small></div>
+    <div class="side"><div class="node">spec.md</div><div class="node">api-contract.md</div><div class="node">decisions.md</div></div>
+  </div>
+  <p class="small muted">Open source · Apache 2.0 · single Go binary · self-hosted</p>
+</section>
+
+<!-- tokens -->
+<section class="slide" data-title="Stop re-reading the codebase">
+  <div class="kicker">Learn something</div>
+  <h2>Stop paying to re-read your codebase.</h2>
+  <p class="lede" style="font-size:40px">Agents already speak <span class="hl">ls, cat and grep</span>. No custom API to learn.</p>
+  <div class="grid2">
+    <div class="card">
+      <h3>Without shared context</h3>
+      <ul class="plain small">
+        <li>Every request, the agent scans the repo</li>
+        <li>Reads file after file to find the contract</li>
+        <li>Burns tokens before it writes a line</li>
+      </ul>
+    </div>
+    <div class="card accent">
+      <h3>With OpenLore</h3>
+      <ul class="plain small">
+        <li>Agent greps one shared source</li>
+        <li>Gets just the context it needs</li>
+        <li>Tokens go to shaping, so cost drops</li>
+      </ul>
+    </div>
+  </div>
+  <p class="muted">One shared API contract would have connected our frontend and backend.</p>
+</section>
+
+<!-- 17 -->
+<section class="slide" data-title="Demo 1: serve and grep">
+  <div class="kicker">Live demo 1</div>
+  <h2>30 seconds to a shared brain.</h2>
+  <div class="term"><div class="term-bar"><i></i><i></i><i></i></div><span class="p">$</span> go install github.com/aakarim/go-openlore/cmd/openlore@latest
+<span class="p">$</span> openlore ./docs                      <span class="c"># SSH :2222 · web + MCP :8080</span>
+
+<span class="p">$</span> ssh -p 2222 localhost "grep -r 'authentication' /"
+<span class="g">/spec.md: Auth uses JWT. Tokens expire after 1h.</span>
+
+<span class="c"># edit spec.md, run it again: the change is already there</span></div>
+</section>
+
+<!-- 18 -->
+<section class="slide" data-title="Demo 2: agent over MCP">
+  <div class="kicker">Live demo 2</div>
+  <h2>Point your agent at it.</h2>
+  <div class="row">
+    <div class="col term"><span class="p">$</span> claude mcp add --transport http \
+    openlore http://localhost:8080/mcp
+
+<span class="p">&gt;</span> What is our API contract for
+  the quiz endpoint?
+
+<span class="g">Reading /api-contract.md ...</span>
+<span class="g">POST /api/v1/quiz takes notes, returns 5 questions.</span></div>
+    <ul class="plain col">
+      <li>Same answer for every teammate's agent</li>
+      <li>Update the doc once, everyone's agent is current</li>
+      <li>Works over MCP, so it's not tied to one tool</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 19 -->
+<section class="slide" data-title="Guardrails">
+  <div class="kicker">Trust</div>
+  <h2>How do you stop a confident agent from overwriting the spec?</h2>
+  <div class="grid4">
+    <div class="card"><h3>Read-only</h3><p>The default. Writes are opt-in.</p></div>
+    <div class="card"><h3>Scoped</h3><p>Each identity sees only its own view.</p></div>
+    <div class="card accent"><h3>Inbox</h3><p>Agents publish findings for review, not straight to the spec.</p></div>
+    <div class="card"><h3>Attributed</h3><p>See who or which agent changed what, and when.</p></div>
+  </div>
+  <p class="muted small">Plus per-document token budgets so agents don't drown in context. Runs as a pure-Go interpreter, with no shell escape.</p>
+</section>
+
+<!-- 20 -->
+<section class="slide" data-title="Your 24-hour playbook">
+  <div class="kicker">Take it home</div>
+  <h2>Your 24-hour playbook.</h2>
+  <div class="timeline">
+    <div class="t"><div class="h">H0</div><div class="d">Read the rubric. Write the demo script.</div></div>
+    <div class="t"><div class="h">H2</div><div class="d">Roles, scope, shared docs live.</div></div>
+    <div class="t"><div class="h">H4</div><div class="d">Ugly skeleton deployed.</div></div>
+    <div class="t"><div class="h">H12</div><div class="d">Demo path works end to end.</div></div>
+    <div class="t"><div class="h">H20</div><div class="d">Code freeze. Rehearse.</div></div>
+    <div class="t"><div class="h">H22</div><div class="d">Record backup demo. Sleep.</div></div>
+  </div>
+  <p class="muted">The printable checklist is in the handout: <span class="mono">handout.html</span></p>
+</section>
+
+<!-- 21 -->
+<section class="slide dark" data-title="Questions and resources">
+  <div class="kicker">Q&amp;A</div>
+  <div class="row" style="align-items:center; gap:80px">
+    <div class="col">
+      <h2>Questions?</h2>
+      <ul class="plain">
+        <li>OpenLore vs a single AGENTS.md?</li>
+        <li>OpenLore vs RAG or a vector DB?</li>
+        <li>OpenLore vs Notion or a Google Doc?</li>
+      </ul>
+      <p class="small muted">openlore.sh · github.com/aakarim/OpenLore<br>It's early. Issues, stars and PRs are welcome.</p>
+    </div>
+    <div style="display:flex; gap:48px">
+      <div style="display:flex; flex-direction:column; gap:14px; align-items:center"><div class="qr lg"><img src="/slides/ship-it-together/assets/qr-openlore.svg" alt="QR code linking to openlore.sh"></div><span class="mono small">openlore.sh</span></div>
+      <div style="display:flex; flex-direction:column; gap:14px; align-items:center"><div class="qr lg"><img src="/slides/ship-it-together/assets/qr-linktree.svg" alt="QR code linking to linktr.ee/arindam_1729"></div><span class="mono small">my links</span></div>
+    </div>
+  </div>
+</section>
+
+</main>
+</div>
+
+<div class="zone l" aria-label="Previous slide"></div>
+<div class="zone r" aria-label="Next slide"></div>
+<div class="hint">← → navigate · F fullscreen · O overview</div>
+<div class="counter"></div>
+<div class="hud"><div class="bar"></div></div>
+<div class="overview"><ol></ol></div>
+
+<script src="/slides/ship-it-together/js/video.js"></script>
+<script src="/slides/ship-it-together/js/deck.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+/* Design tokens extracted from openlore.sh */
+@font-face { font-family: "Familjen Grotesk"; font-weight: 400; font-style: normal; font-display: swap; src: url("../fonts/fg-400.woff2") format("woff2"); }
+@font-face { font-family: "Familjen Grotesk"; font-weight: 500; font-style: normal; font-display: swap; src: url("../fonts/fg-500.woff2") format("woff2"); }
+@font-face { font-family: "Familjen Grotesk"; font-weight: 700; font-style: normal; font-display: swap; src: url("../fonts/fg-700.woff2") format("woff2"); }
+
+:root {
+  --ink: #222222;
+  --muted: #606060;
+  --accent: #FF9A68;
+  --paper: #FAFAFA;
+  --soft: #EFEFEF;
+  --plum: #3E3453;
+  --plum-2: #685477;
+  --white: #FFFFFF;
+  --sans: "Familjen Grotesk", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; }
+body { font-family: var(--sans); background: var(--paper); color: var(--ink); -webkit-font-smoothing: antialiased; }
+code, pre, .mono { font-family: var(--mono); }
+a { color: inherit; }
+
+/* pixel-dash motif from the openlore.sh hero */
+.pixel-rule {
+  height: 9px;
+  background: repeating-linear-gradient(90deg, var(--ink) 0 5px, transparent 5px 9px);
+}
