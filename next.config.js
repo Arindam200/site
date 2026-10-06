@@ -41,8 +41,8 @@ const nextConfig = {
         destination: "/slides/ship-it-together/handout.html",
       },
       {
-        source: "/slides/open-source-helped-me",
-        destination: "/slides/open-source-helped-me/index.html",
+        source: "/slides/oss-help",
+        destination: "/slides/oss-help/index.html",
       },
     ];
   },
