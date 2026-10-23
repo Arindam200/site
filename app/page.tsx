@@ -100,7 +100,16 @@ export default function Page() {
           </Link>
         </span>
         , where we help SaaS, DevTools, and AI startups with technical content,
-        agent demos, and developer advocacy.
+        agent demos, and developer advocacy. I&apos;m building{" "}
+        <a
+          href={withUtmSource("https://vid0.in")}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline"
+        >
+          Vid0
+        </a>
+        .
       </p>
 
       <div className="my-8 flex flex-row items-start gap-2 md:items-center">

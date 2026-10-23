@@ -16,6 +16,13 @@ interface Project {
 
 const projects: Project[] = [
   {
+    name: "Vid0",
+    href: "https://vid0.in",
+    closedSource: true,
+    description: "AI YouTube growth analytics for creators.",
+    tags: ["Product", "YouTube"],
+  },
+  {
     name: "Formaly",
     href: "https://www.formaly.io/",
     closedSource: true,
