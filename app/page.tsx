@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import FormalyLogo from "../assets/Formaly.png";
 import Studio1Logo from "../assets/Studio1.png";
 import Vid0Logo from "../assets/Vid0.png";
 import ab from "./testimonials/assets/Arindam.png";
@@ -101,25 +102,7 @@ export default function Page() {
           </Link>
         </span>
         , where we help SaaS, DevTools, and AI startups with technical content,
-        agent demos, and developer advocacy. And I&apos;m currently building{" "}
-        <span className="not-prose">
-          <a
-            href={withUtmSource("https://vid0.in")}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center rounded border border-neutral-200 bg-neutral-50 p-1 text-sm leading-4 text-neutral-900 underline dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-100"
-          >
-            <Image
-              src={Vid0Logo.src}
-              alt="Vid0 Logo"
-              width={14}
-              height={14}
-              className="!mr-1 rounded-[3px]"
-            />
-            Vid0
-          </a>
-        </span>
-        .
+        agent demos, and developer advocacy.
       </p>
 
       <div className="my-8 flex flex-row items-start gap-2 md:items-center">
@@ -154,6 +137,46 @@ export default function Page() {
 
       <div className="prose prose-neutral dark:prose-invert">
         <p>
+          I&apos;m a builder at heart. I keep shipping products and
+          experimenting with new things. Previously I built{" "}
+          <span className="not-prose">
+            <a
+              href={withUtmSource("https://www.formaly.io/")}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center rounded border border-neutral-200 bg-neutral-50 p-1 text-sm leading-4 text-neutral-900 underline dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-100"
+            >
+              <Image
+                src={FormalyLogo.src}
+                alt="Formaly Logo"
+                width={14}
+                height={14}
+                className="!mr-1 rounded-[3px]"
+              />
+              Formaly
+            </a>
+          </span>
+          , which ranked #3 on Product Hunt, and I&apos;m currently building{" "}
+          <span className="not-prose">
+            <a
+              href={withUtmSource("https://vid0.in")}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center rounded border border-neutral-200 bg-neutral-50 p-1 text-sm leading-4 text-neutral-900 underline dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-100"
+            >
+              <Image
+                src={Vid0Logo.src}
+                alt="Vid0 Logo"
+                width={14}
+                height={14}
+                className="!mr-1 rounded-[3px]"
+              />
+              Vid0
+            </a>
+          </span>
+          .
+        </p>
+        <p>
           AI moves quickly; I make it practical. I create hands-on{" "}
           <a
             href={withUtmSource("https://ggl.link/arindam-youtube")}
@@ -163,16 +186,7 @@ export default function Page() {
           >
             YouTube tutorials
           </a>
-          , and build in the open. I shipped{" "}
-          <a
-            href={withUtmSource("https://www.formaly.io/")}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline"
-          >
-            Formaly
-          </a>
-          , a SaaS for conversational forms, alongside open source projects like{" "}
+          , and build in the open with projects like{" "}
           <a
             href={withUtmSource(
               "https://github.com/Arindam200/awesome-ai-apps",
