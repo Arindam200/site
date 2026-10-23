@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Studio1Logo from "../assets/Studio1.png";
+import Vid0Logo from "../assets/Vid0.png";
 import ab from "./testimonials/assets/Arindam.png";
 import { preloadBlogPosts } from "./blog/data";
 import {
@@ -100,15 +101,24 @@ export default function Page() {
           </Link>
         </span>
         , where we help SaaS, DevTools, and AI startups with technical content,
-        agent demos, and developer advocacy. I&apos;m building{" "}
-        <a
-          href={withUtmSource("https://vid0.in")}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="underline"
-        >
-          Vid0
-        </a>
+        agent demos, and developer advocacy. And I&apos;m currently building{" "}
+        <span className="not-prose">
+          <a
+            href={withUtmSource("https://vid0.in")}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center rounded border border-neutral-200 bg-neutral-50 p-1 text-sm leading-4 text-neutral-900 underline dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-100"
+          >
+            <Image
+              src={Vid0Logo.src}
+              alt="Vid0 Logo"
+              width={14}
+              height={14}
+              className="!mr-1 rounded-[3px]"
+            />
+            Vid0
+          </a>
+        </span>
         .
       </p>
 
