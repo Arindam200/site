@@ -226,7 +226,7 @@ export default function CollaborationsPage() {
         </p>
         <ul>
           <li>
-            ~350K+ impressions/month on{" "}
+            ~580K impressions/month on{" "}
             <a
               href={withUtmSource("https://dub.sh/arindam-linkedin")}
               target="_blank"
@@ -237,7 +237,18 @@ export default function CollaborationsPage() {
             </a>
           </li>
           <li>
-            180K+ views on{" "}
+            1.7M impressions in the last month on{" "}
+            <a
+              href={withUtmSource("https://dub.sh/arindam-x")}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline"
+            >
+              X (Twitter)
+            </a>
+          </li>
+          <li>
+            210K+ views on{" "}
             <a
               href={withUtmSource("https://ggl.link/arindam-youtube")}
               target="_blank"
@@ -247,7 +258,7 @@ export default function CollaborationsPage() {
               YouTube
             </a>
           </li>
-          <li>1M+ blog views across platforms</li>
+          <li>2M+ blog views across platforms</li>
           <li>
             70K-80K monthly views on{" "}
             <a
@@ -261,9 +272,10 @@ export default function CollaborationsPage() {
           </li>
         </ul>
         <p>
-          For a closer look at recent performance across platforms, see the{" "}
-          <a href="/stats" className="underline">
-            stats page
+          For audience demographics, recent performance, and per-post rates, see
+          the{" "}
+          <a href="/collaborations/mediakit" className="underline">
+            media kit
           </a>
           .
         </p>
@@ -298,7 +310,7 @@ export default function CollaborationsPage() {
               LinkedIn.
             </p>
             <p className="mt-4 text-sm leading-6 text-neutral-600 dark:text-neutral-400">
-              Want to start smaller? Single-post options start at $100.
+              Want to start smaller? A single post on X and LinkedIn is $150.
             </p>
             <div className="mt-auto pt-8">
               <a

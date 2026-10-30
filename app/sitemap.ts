@@ -24,6 +24,7 @@ export default async function sitemap() {
     "/vid0",
     "/events",
     "/collaborations",
+    "/collaborations/mediakit",
     "/contact-me",
     "/agency",
     "/resume",
