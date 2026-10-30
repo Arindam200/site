@@ -33,12 +33,12 @@ const platforms: Platform[] = [
     name: "LinkedIn",
     icon: LinkedInIcon,
     href: withUtmSource("https://dub.sh/arindam-linkedin"),
-    period: "Last 30 days",
+    period: "Last 60 days",
     stats: [
-      { label: "Impressions", value: "412,992", delta: "+972%" },
-      { label: "Members reached", value: "271,856" },
-      { label: "Social engagements", value: "6,018" },
-      { label: "Link engagements", value: "3,891" },
+      { label: "Impressions", value: "1,159,688", delta: "+307%" },
+      { label: "Members reached", value: "485,589" },
+      { label: "Social engagements", value: "19,356" },
+      { label: "Link engagements", value: "13,866" },
     ],
   },
   {
@@ -47,16 +47,16 @@ const platforms: Platform[] = [
     href: withUtmSource("https://ggl.link/arindam-youtube"),
     period: "Last 28 days",
     stats: [
-      { label: "Views", value: "11,713" },
-      { label: "Watch time (hours)", value: "202.1" },
-      { label: "Subscribers", value: "+80" },
+      { label: "Views", value: "13,764" },
+      { label: "Watch time (hours)", value: "206.2" },
+      { label: "Subscribers", value: "+94" },
     ],
     topCountries: [
-      { country: "India", percent: 32.0 },
-      { country: "United States", percent: 14.2 },
-      { country: "Indonesia", percent: 0.7 },
+      { country: "India", percent: 38.6 },
+      { country: "United States", percent: 9.0 },
+      { country: "Germany", percent: 0.9 },
+      { country: "United Kingdom", percent: 0.5 },
       { country: "Canada", percent: 0.3 },
-      { country: "Germany", percent: 0.2 },
     ],
   },
   {
@@ -65,10 +65,10 @@ const platforms: Platform[] = [
     href: withUtmSource("https://dub.sh/arindam-x"),
     period: "Last 28 days",
     stats: [
-      { label: "Impressions", value: "218.4K", delta: "+17%" },
-      { label: "Engagements", value: "2K", delta: "+33%" },
-      { label: "Likes", value: "1.1K", delta: "+77%" },
-      { label: "Profile visits", value: "440", delta: "+29%" },
+      { label: "Impressions", value: "1.7M", delta: "+1K%" },
+      { label: "Engagements", value: "22.1K", delta: "+1K%" },
+      { label: "Likes", value: "8.3K", delta: "+777%" },
+      { label: "Profile visits", value: "1.5K", delta: "+334%" },
     ],
   },
 ];
@@ -189,7 +189,7 @@ export default function StatsPage() {
           .
         </p>
         <p className="text-sm text-neutral-500 dark:text-neutral-400">
-          Last updated: September 15, 2026
+          Last updated: October 30, 2026
         </p>
       </div>
     </section>

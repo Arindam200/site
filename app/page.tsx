@@ -124,13 +124,13 @@ export default function Page() {
             <span className="flex size-5 shrink-0 items-center justify-center">
               <YoutubeIcon />
             </span>
-            150K+ views on YouTube
+            210K+ views on YouTube
           </p>
           <p className="flex min-h-5 items-center gap-2 leading-5">
             <span className="flex size-5 shrink-0 items-center justify-center">
               <ViewsIcon />
             </span>
-            1M+ blog views across platforms
+            2M+ blog views across platforms
           </p>
         </div>
       </div>
@@ -197,7 +197,7 @@ export default function Page() {
           >
             awesome-ai-apps
           </a>{" "}
-          (13K+ stars),{" "}
+          (16K+ stars),{" "}
           <a
             href={withUtmSource("https://github.com/Arindam200/cc-lens")}
             target="_blank"
