@@ -161,7 +161,7 @@ export default function Page() {
             <a
               href={withUtmSource("https://vid0.in")}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
               className="inline-flex items-center rounded border border-neutral-200 bg-neutral-50 p-1 text-sm leading-4 text-neutral-900 underline dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-100"
             >
               <Image

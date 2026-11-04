@@ -33,7 +33,7 @@ function Vid0Link({ children }: { children: React.ReactNode }) {
     <a
       href={withUtmSource("https://vid0.in")}
       target="_blank"
-      rel="noopener noreferrer"
+      rel="noopener"
       className="underline"
     >
       {children}

@@ -102,7 +102,7 @@ export default function ProjectsPage() {
                 <a
                   href={withUtmSource(project.href)}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener"
                   className="text-lg font-medium tracking-tight underline underline-offset-2"
                 >
                   {project.name}
