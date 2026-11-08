@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import FormalyLogo from "../assets/Formaly.png";
@@ -16,6 +17,12 @@ import {
   SubstackIcon,
 } from "./components/icons";
 import { withUtmSource } from "./utils/utm";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/",
+  },
+};
 
 interface SocialLinkProps {
   href: string;

@@ -8,6 +8,9 @@ import BlogLoading from "./loading";
 export const metadata: Metadata = {
   title: "Blog",
   description: "Read my blog.",
+  alternates: {
+    canonical: "/blog",
+  },
   openGraph: {
     title: "Blog | Arindam",
     description: "Blogs of Arindam Majumder.",

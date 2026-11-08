@@ -17,9 +17,6 @@ export const metadata: Metadata = {
     template: "%s | Arindam Majumder",
   },
   description: "Developer, Technical Writer, Community Builder",
-  alternates: {
-    canonical: "/",
-  },
   openGraph: {
     title: "Arindam Majumder",
     description: "DevRel, Technical Writer, Community Builder",
