@@ -6,6 +6,7 @@ import {
   TwitterIcon,
   YoutubeIcon,
 } from "app/components/icons";
+import { AudienceCompanies } from "app/components/audience-companies";
 import { withUtmSource } from "app/utils/utm";
 
 export const metadata: Metadata = {
@@ -66,9 +67,9 @@ const customers = [
     href: "https://brightdata.com/",
   },
   {
-    name: "ScrapingDog",
-    logo: "/customer-logos/scrapingdog.svg",
-    href: "https://www.scrapingdog.com/",
+    name: "SuperPlane",
+    logo: "/customer-logos/superplane.svg",
+    href: "https://superplane.com/",
   },
   {
     name: "SerpApi",
@@ -413,6 +414,8 @@ export default function CollaborationsPage() {
           </div>
         </article>
       </div>
+
+      <AudienceCompanies />
 
       <div className="prose prose-neutral mt-10 dark:prose-invert">
         <hr className="my-8 border-neutral-100 dark:border-neutral-800" />

@@ -6,6 +6,7 @@ import {
   TwitterIcon,
   YoutubeIcon,
 } from "app/components/icons";
+import { AudienceCompanies } from "app/components/audience-companies";
 import { withUtmSource } from "app/utils/utm";
 
 export const metadata: Metadata = {
@@ -657,6 +658,8 @@ export default function MediaKitPage() {
         ))}
       </div>
 
+      <AudienceCompanies />
+
       <div className="prose prose-neutral mt-10 dark:prose-invert">
         <hr className="my-8 border-neutral-100 dark:border-neutral-800" />
         <h2>Let&apos;s work together</h2>
@@ -670,8 +673,8 @@ export default function MediaKitPage() {
           before work begins.
         </p>
         <p className="text-sm text-neutral-500 dark:text-neutral-400">
-          All figures come from YouTube Studio, X Analytics, and LinkedIn
-          creator analytics. Last updated: October 30, 2026.
+          Reach and audience figures come from YouTube Studio, X Analytics, and
+          LinkedIn creator analytics. Last updated: October 30, 2026.
         </p>
       </div>
     </section>
